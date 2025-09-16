@@ -48,5 +48,3 @@ Below is a lightweight dictionary with one example value per column (from your f
 | `ReplacementCost` | Example: `21574.8` |
 | `AttritionCost` | Example: `0.0` |
 | `RiskScore` | Example: `2` |
-
-> Tip: Expand this with formal definitions if you share the dataset.
