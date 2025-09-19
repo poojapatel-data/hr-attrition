@@ -3,16 +3,18 @@
 This file documents all fields used in the project—both **raw source columns** from the IBM HR sample dataset and **engineered columns** created in Power Query in Excel.
 
 ### Notes
+
 - **Raw columns** come from the IBM HR sample dataset.
 - **Engineered columns** were created in Power Query/Excel for analysis and dashboards.
 - **Ordinal scales** (1–4 / 1–5) are summarized in **Code Lists** at the end.
 - **Dropped fields** (constant/unused) are listed at the end with reasons.
-<br>
+  <br>
 
 ### A) Raw Columns (retained)
+
 | Column                     | Type            | Definition                                                          | Example           |
 | -------------------------- | --------------- | ------------------------------------------------------------------- | ----------------- |
-| `EmployeeNumber`           | Integer         | Unique employee identifier.                                         | `101`             |
+| `EmployeeId`               | Integer         | Unique employee identifier.                                         | `101`             |
 | `Age`                      | Integer (years) | Employee age.                                                       | `41`              |
 | `Gender`                   | Categorical     | Gender.                                                             | `Female`          |
 | `MaritalStatus`            | Categorical     | Marital status.                                                     | `Single`          |
@@ -36,7 +38,7 @@ This file documents all fields used in the project—both **raw source columns**
 | `YearsWithCurrManager`     | Integer (years) | Years under current manager.                                        | `5`               |
 | `NumCompaniesWorked`       | Integer         | Prior employers count.                                              | `3`               |
 | `OverTime`                 | Yes/No          | Works overtime.                                                     | `Yes`             |
-| `PerformanceRating`        | Ordinal (1–4)   | Performance score.      | `3`               |
+| `PerformanceRating`        | Ordinal (1–4)   | Performance score.                                                  | `3`               |
 | `TrainingTimesLastYear`    | Integer         | Courses attended last year.                                         | `2`               |
 | `Education`                | Ordinal (1–5)   | Highest education level.                                            | `3`               |
 | `EducationField`           | Categorical     | Field of study.                                                     | `Life Sciences`   |
@@ -45,30 +47,38 @@ This file documents all fields used in the project—both **raw source columns**
 <br>
 
 ### B) Engineered Columns (created for analysis)
-| Column              | Type          | How it’s computed                                                                                                                   | Example        |
-| ------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| `AttritionFlag`     | 0/1           | 1 if `Attrition = "Yes"`, else 0.                                                                                                   | `1`            |
-| `OverTimeFlag`      | 0/1           | 1 if `OverTime = "Yes"`, else 0.                                                                                                    | `1`            |
-| `EarlyCareer`       | 0/1           | 1 if `TotalWorkingYears ≤ 3`, else 0.                                                                                               | `0`            |
-| `RecentPromotion`   | 0/1           | 1 if `YearsSinceLastPromotion ≤ 1`, else 0.                                                                                         | `1`            |
-| `ManagerStability`  | 0/1           | 1 if `YearsWithCurrManager ≥ 1`, else 0.                                                                                            | `1`            |
-| `AgeGroup`          | Categorical   | Bands from `Age` (e.g., `18–24`, `25–34`, `35–44`, `45–54`, `55–60`).                                                               | `35–44`        |
-| `CommuteRange`      | Categorical   | Bands from `DistanceFromHome` (`≤5 km`, `6–10 km`, `11–15 km`, `16–20 km`, `20+ km`).                                               | `≤5 km`        |
-| `IncomeGroup`       | Categorical   | Brackets from `MonthlyIncome` (e.g., `Low`, `Lower-Middle`, `Upper-Middle`, `High`).                                                | `Lower-Middle` |
-| `EmploymentStage`   | Categorical   | Tenure stage from `YearsAtCompany` (`New Hires`, `Early Career`, `Established`, `Experienced`, `Veterans`).                         | `Established`  |
-| `CareerStage`       | Categorical   | Career stage from `TotalWorkingYears` (5-range version: `Early Career`, `Early-Mid`, `Mid`, `Experienced`, `Senior`).               | `Mid`          |
-| `SatisfactionIndex` | Decimal (1–4) | Average of `EnvironmentSatisfaction`, `JobSatisfaction`, `RelationshipSatisfaction`, `WorkLifeBalance`.                             | `2.75`         |
-| `SatisfactionLevel` | Categorical   | Bands from `SatisfactionIndex` (5-range: `Very Low` 1.0–1.5, `Low` 1.6–2.0, `Medium` 2.1–2.5, `High` 2.6–3.0, `Very High` 3.1–4.0). | `High`         |
+
+| Column              | Type          | How it’s computed                                                                                                                                                                            | Example        |
+| ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| `AttritionFlag`     | 0/1           | 1 if `Attrition = "Yes"`, else 0.                                                                                                                                                            | `1`            |
+| `OverTimeFlag`      | 0/1           | 1 if `OverTime = "Yes"`, else 0.                                                                                                                                                             | `1`            |
+| `EarlyCareer`       | 0/1           | 1 if `TotalWorkingYears ≤ 3`, else 0.                                                                                                                                                        | `0`            |
+| `RecentPromotion`   | 0/1           | 1 if `YearsSinceLastPromotion ≤ 1`, else 0.                                                                                                                                                  | `1`            |
+| `ManagerStability`  | 0/1           | 1 if `YearsWithCurrManager ≥ 1`, else 0.                                                                                                                                                     | `1`            |
+| `AgeGroup`          | Categorical   | Bands from `Age` (e.g., `18–24`, `25–34`, `35–44`, `45–54`, `55–60`).                                                                                                                        | `35–44`        |
+| `CommuteRange`      | Categorical   | Bands from `DistanceFromHome` (`≤5 km`, `6–10 km`, `11–15 km`, `16–20 km`, `20+ km`).                                                                                                        | `≤5 km`        |
+| `IncomeGroup`       | Categorical   | Brackets from `MonthlyIncome` (e.g., `Low`, `Lower-Middle`, `Upper-Middle`, `High`).                                                                                                         | `Lower-Middle` |
+| `EmploymentStage`   | Categorical   | Tenure stage from `YearsAtCompany` (`New Hires`, `Early Career`, `Established`, `Experienced`, `Veterans`).                                                                                  | `Established`  |
+| `CareerStage`       | Categorical   | Career stage from `TotalWorkingYears` (5-range version: `Early Career`, `Early-Mid`, `Mid`, `Experienced`, `Senior`).                                                                        | `Mid`          |
+| `SatisfactionIndex` | Decimal (1–4) | Average of `EnvironmentSatisfaction`, `JobSatisfaction`, `RelationshipSatisfaction`, `WorkLifeBalance`.                                                                                      | `2.75`         |
+| `SatisfactionLevel` | Categorical   | Bands from `SatisfactionIndex` (5-range: `Very Low` 1.0–1.5, `Low` 1.6–2.0, `Medium` 2.1–2.5, `High` 2.6–3.0, `Very High` 3.1–4.0).                                                          | `High`         |
+| `PromotionBand`     | Categorical   | Bands from `YearsSinceLastPromotion`: `0`, `1–2`, `3–5`, `6+` (years since last promotion).                                                                                                  | `1–2`          |
+| `ReplacementCost`   | Currency (₹)  | Estimated replacement cost = `SelectedFactor × AnnualSalary` = `SelectedFactor × 12 × MonthlyIncome`.                                                                                        | `—`            |
+| `AttritionCost`     | Currency (₹)  | `ReplacementCost × AttritionFlag` (cost realized only when `Attrition = "Yes"`).                                                                                                             | `—`            |
+| `RiskScore`         | Integer (0–4) | Count of risk drivers present (1 pt each): **Overtime**, **Long commute** (`DistanceFromHome ≥ 20 km`), **Low/Very Low satisfaction**, **Manager instability** (`YearsWithCurrManager < 1`). | `2`            |
+| `RiskTier`          | Categorical   | Quartile of `RiskScore` distribution: `Q1 (Lowest)`, `Q2`, `Q3`, `Q4 (Highest)`.                                                                                                             | `Q2`           |
 
 <br>
 
 ### C) Raw Columns (dropped during cleaning)
-| Column                                   | Reason dropped                                                   |
-| ---------------------------------------- | ---------------------------------------------------------------- |
-| `EmployeeCount`                          | Constant = 1 (no information).                                   |
-| `Over18`                                 | Constant = "Y" (all employees are adults).                       |
-| `StandardHours`                          | Constant (e.g., 80) — no variance.                               |
-| `HourlyRate`, `DailyRate`, `MonthlyRate` | Redundant with `MonthlyIncome` and not used in analysis/visuals. |
+
+| Column                                   | Reason dropped                                                                |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| `EmployeeCount`                          | Constant = 1 (no information).                                                |
+| `Over18`                                 | Constant = "Y" (all employees are adults).                                    |
+| `StandardHours`                          | Constant (e.g., 80) — no variance.                                            |
+| `HourlyRate`, `DailyRate`, `MonthlyRate` | Redundant with `MonthlyIncome` and not used in analysis/visuals.              |
+| `Quartiles`                              | Intermediate/helper output (risk quartile scratch). Superseded by `RiskTier`. |
 
 <br>
 
@@ -76,37 +86,37 @@ This file documents all fields used in the project—both **raw source columns**
 
 > These fields are **ordinal** (ranked categories). Treat codes as ordered labels, not equal-interval numbers.
 
-| Field                     | Code | Label        |
-|--------------------------|-----:|--------------|
-| **Education (1–5)**      | 1    | Below College|
-|                          | 2    | College      |
-|                          | 3    | Bachelor     |
-|                          | 4    | Master       |
-|                          | 5    | Doctor       |
-| **EnvironmentSatisfaction (1–4)** | 1 | Low   |
-|                          | 2    | Medium       |
-|                          | 3    | High         |
-|                          | 4    | Very High    |
-| **JobInvolvement (1–4)** | 1    | Low          |
-|                          | 2    | Medium       |
-|                          | 3    | High         |
-|                          | 4    | Very High    |
-| **JobSatisfaction (1–4)**| 1    | Low          |
-|                          | 2    | Medium       |
-|                          | 3    | High         |
-|                          | 4    | Very High    |
-| **RelationshipSatisfaction (1–4)** | 1 | Low  |
-|                          | 2    | Medium       |
-|                          | 3    | High         |
-|                          | 4    | Very High    |
-| **WorkLifeBalance (1–4)**| 1    | Bad          |
-|                          | 2    | Good         |
-|                          | 3    | Better       |
-|                          | 4    | Best         |
-| **PerformanceRating (1–4)** | 1 | Low         |
-|                          | 2    | Good         |
-|                          | 3    | Excellent    |
-|                          | 4    | Outstanding  |
+| Field                              | Code | Label         |
+| ---------------------------------- | ---: | ------------- |
+| **Education (1–5)**                |    1 | Below College |
+|                                    |    2 | College       |
+|                                    |    3 | Bachelor      |
+|                                    |    4 | Master        |
+|                                    |    5 | Doctor        |
+| **EnvironmentSatisfaction (1–4)**  |    1 | Low           |
+|                                    |    2 | Medium        |
+|                                    |    3 | High          |
+|                                    |    4 | Very High     |
+| **JobInvolvement (1–4)**           |    1 | Low           |
+|                                    |    2 | Medium        |
+|                                    |    3 | High          |
+|                                    |    4 | Very High     |
+| **JobSatisfaction (1–4)**          |    1 | Low           |
+|                                    |    2 | Medium        |
+|                                    |    3 | High          |
+|                                    |    4 | Very High     |
+| **RelationshipSatisfaction (1–4)** |    1 | Low           |
+|                                    |    2 | Medium        |
+|                                    |    3 | High          |
+|                                    |    4 | Very High     |
+| **WorkLifeBalance (1–4)**          |    1 | Bad           |
+|                                    |    2 | Good          |
+|                                    |    3 | Better        |
+|                                    |    4 | Best          |
+| **PerformanceRating (1–4)**        |    1 | Low           |
+|                                    |    2 | Good          |
+|                                    |    3 | Excellent     |
+|                                    |    4 | Outstanding   |
 
 <br>
 
@@ -114,3 +124,4 @@ This file documents all fields used in the project—both **raw source columns**
 
 - **MonthlyIncome** in this public sample is **synthetic**; use it **comparatively** (e.g., via `IncomeGroup`) rather than as a literal salary KPI.
 - **Attrition Rate** shown in tables/charts is the **average of `AttritionFlag`** within each group (**1 = left**, **0 = stayed**).
+- In `params` sheet the **SelectedFactor is 0.3 (Conservative)** → ReplacementCost = **3.6 × MonthlyIncome**. Update the selected scenario there to get a different assumption.
