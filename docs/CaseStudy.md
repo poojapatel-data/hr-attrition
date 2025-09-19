@@ -66,7 +66,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **CommuteRange:** **20+ km 22.1%** is highest.  
 **Action:** Targeted comp reviews for low-income roles; flexible shifts/WFH days or commute stipends.
 
-**Figures:** *(add)* `images/attrition_by_income.png`, *(add)* `images/attrition_by_commute.png`
+**Figures:** `images/attrition_by_income.png`, `images/attrition_by_commute.png`
 
  
 ### 4) People experience
@@ -75,7 +75,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **Recent Promotion:** weak protective effect (Promoted **17.0%** vs Not **14.7%**).  
 **Action:** Manager coaching + pulse checks; recognition programs beyond promotions.
 
-**Figures:** `images/attrition_by_satisfaction.png`, *(add)* `images/attrition_by_manager.png`
+**Figures:** `images/attrition_by_satisfaction.png`, `images/attrition_by_manager.png`
  
 
 ### 5) Economic impact & prioritization
@@ -85,7 +85,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **By role (leavers):** Sales Executive **$1.54M**, Lab Technician **$0.65M**.
 **Action:** Focus retention spend on highest-cost roles/departments; set 90-day reduction targets, reallocate quarterly by ROI.
   
-**Figures:** `images/replacement_by_jobrole.png`, *(add)* `images/replacement_by_department.png`
+**Figures:** `images/replacement_by_jobrole.png`, `images/replacement_by_department.png`
  
 
 ### 6) Risk tiers
