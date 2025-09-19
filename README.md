@@ -93,23 +93,31 @@ This repository includes a reproducible Excel workbook, clearly defined KPIs, an
 
 ---
 
-## 📊 Dashboard (Highlights)
+## 📊 Dashboard
 
 ![Full Dashboard](images/dashboard.png)
 
-**Workforce & Cost**
+<br>
+
+### **Workforce & Cost**
 ![KPI Overview](images/kpis_overview.png)
 
-**Core Drivers**
+<br>
+
+### **Core Drivers**
 ![Attrition by Department](images/attrition_by_department.png)
 ![Attrition by Job Role](images/attrition_by_jobrole.png)
 ![OverTime × Department](images/overtime_x_department.png)
 
-**Lifecycle & Experience**
+<br>
+
+### **Lifecycle & Experience**
 ![Attrition by Age Group](images/attrition_by_agegroup.png)
 ![Attrition by Satisfaction Level](images/attrition_by_satisfaction.png)
 
-**Economic Impact**
+<br>
+
+### **Economic Impact**
 ![Replacement Exposure by Job Role](images/replacement_by_jobrole.png)
 
 > More visuals and deep dives: see **docs/CaseStudy.md** (Income Group, Commute Range, Employment/Career stages, Manager Stability, Recent Promotion, Risk tiers, Department cost).
