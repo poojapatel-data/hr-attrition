@@ -52,6 +52,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ![](../images/overtime_x_department.png)
 ![](../images/attrition_by_department.png)
 
+<br>
 
 ### 2) Lifecycle & experience
 - **CareerStage:** **Early Career** (by TotalWorkingYears) has **38.2%** attrition.
@@ -62,6 +63,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ![](../images/attrition_by_agegroup.png)
 ![](../images/attrition_by_jobrole.png)
 
+ <br>
  
 ### 3) Rewards & commute
 - **IncomeGroup:** **Low Income 21.8%** vs **High Income 3.8%**.
@@ -71,7 +73,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ![](../images/attrition_by_income.png)
 ![](../images/attrition_by_commute.png)
 
- 
+<br>
+
 ### 4) People experience
 - **Satisfaction:** drops from **36.7% (Very Low)** to **10.2% (Very High)**.
 - **Manager Stability:** Unstable **32.3%** vs Stable **12.6%**.
@@ -81,6 +84,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ![](../images/attrition_by_satisfaction.png)
 ![](../images/attrition_by_manager.png)
  
+<br>
 
 ### 5) Economic impact & prioritization
 - **Total Attrition Cost:** **$4,062,773**  
@@ -92,6 +96,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ![](../images/replacement_by_jobrole.png)
 ![](../images/replacement_by_department.png)
  
+<br>
 
 ### 6) Risk tiers
 - **RiskTier:** Q4 (Highest) **44.1%** vs Q1 (Lowest) **5.1%**.
