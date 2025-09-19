@@ -49,7 +49,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **By department**, **Sales (20.6%)** highest; **R&D (13.8%)** lowest.   
 **Action:** Introduce OT guardrails (caps, rota, rest windows) in **Sales** and **R&D** first.
 
-(../images/overtime_x_department.png), (../images/attrition_by_department.png)
+![](../images/overtime_x_department.png)
+![](../images/attrition_by_department.png)
 
 
 ### 2) Lifecycle & experience
@@ -58,7 +59,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **AgeGroup:** **<25 attrite at 39.2%**  
 **Action:** Structured onboarding (first 90 days), buddy programs, and early-skill pathways.
 
-(../images/attrition_by_agegroup.png), (../images/attrition_by_jobrole.png)
+![](../images/attrition_by_agegroup.png)
+![](../images/attrition_by_jobrole.png)
 
  
 ### 3) Rewards & commute
@@ -66,7 +68,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **CommuteRange:** **20+ km 22.1%** is highest.  
 **Action:** Targeted comp reviews for low-income roles; flexible shifts/WFH days or commute stipends.
 
-(../images/attrition_by_income.png), (../images/attrition_by_commute.png)
+![](../images/attrition_by_income.png)
+![](../images/attrition_by_commute.png)
 
  
 ### 4) People experience
@@ -75,7 +78,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **Recent Promotion:** weak protective effect (Promoted **17.0%** vs Not **14.7%**).  
 **Action:** Manager coaching + pulse checks; recognition programs beyond promotions.
 
-(../images/attrition_by_satisfaction.png), (../images/attrition_by_manager.png)
+![](../images/attrition_by_satisfaction.png)
+![](../images/attrition_by_manager.png)
  
 
 ### 5) Economic impact & prioritization
@@ -85,14 +89,15 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **By role (leavers):** Sales Executive **$1.54M**, Lab Technician **$0.65M**.
 **Action:** Focus retention spend on highest-cost roles/departments; set 90-day reduction targets, reallocate quarterly by ROI.
   
-(../images/replacement_by_jobrole.png), (../images/replacement_by_department.png)
+![](../images/replacement_by_jobrole.png)
+![](../images/replacement_by_department.png)
  
 
 ### 6) Risk tiers
 - **RiskTier:** Q4 (Highest) **44.1%** vs Q1 (Lowest) **5.1%**.
 **Action:** Trigger Q4 rapid-response (manager 1:1s, OT fixes, quick recognition) with 30-day pulses.
   
-(../images/attrition_by_risktier.png)
+![](../images/attrition_by_risktier.png)
 
 <br>
 
