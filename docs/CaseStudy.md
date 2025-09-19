@@ -46,7 +46,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 
 ### 1) Operational drivers
 - **Overtime** strongly associated with higher attrition (**30.5% vs 10.4%**).  
-- **By department**, **Sales (20.6%)** highest; **R&D (13.8%)** lowest.   
+- **By department**, **Sales (20.6%)** highest; **R&D (13.8%)** lowest.
+
 **Action:** Introduce OT guardrails (caps, rota, rest windows) in **Sales** and **R&D** first.
 
 ![](../images/overtime_x_department.png)
@@ -57,7 +58,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ### 2) Lifecycle & experience
 - **CareerStage:** **Early Career** (by TotalWorkingYears) has **38.2%** attrition.
 - **EmploymentStage:** **New Hires** (by YearsAtCompany) attrite at **34.9%**.  
-- **AgeGroup:** **<25 attrite at 39.2%**  
+- **AgeGroup:** **<25 attrite at 39.2%**
+
 **Action:** Structured onboarding (first 90 days), buddy programs, and early-skill pathways.
 
 ![](../images/attrition_by_agegroup.png)
@@ -67,7 +69,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
  
 ### 3) Rewards & commute
 - **IncomeGroup:** **Low Income 21.8%** vs **High Income 3.8%**.
-- **CommuteRange:** **20+ km 22.1%** is highest.  
+- **CommuteRange:** **20+ km 22.1%** is highest.
+
 **Action:** Targeted comp reviews for low-income roles; flexible shifts/WFH days or commute stipends.
 
 ![](../images/attrition_by_income.png)
@@ -78,7 +81,8 @@ To understand where and why employees leave by quantifying attrition levels, ide
 ### 4) People experience
 - **Satisfaction:** drops from **36.7% (Very Low)** to **10.2% (Very High)**.
 - **Manager Stability:** Unstable **32.3%** vs Stable **12.6%**.
-- **Recent Promotion:** weak protective effect (Promoted **17.0%** vs Not **14.7%**).  
+- **Recent Promotion:** weak protective effect (Promoted **17.0%** vs Not **14.7%**).
+
 **Action:** Manager coaching + pulse checks; recognition programs beyond promotions.
 
 ![](../images/attrition_by_satisfaction.png)
@@ -91,6 +95,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 - **Avg. Replacement Cost per Attrition:** **$17,143**  
 - **By department (leavers):** R&D **$1.97M**, Sales **$1.96M**.  
 - **By role (leavers):** Sales Executive **$1.54M**, Lab Technician **$0.65M**.
+
 **Action:** Focus retention spend on highest-cost roles/departments; set 90-day reduction targets, reallocate quarterly by ROI.
   
 ![](../images/replacement_by_jobrole.png)
@@ -100,6 +105,7 @@ To understand where and why employees leave by quantifying attrition levels, ide
 
 ### 6) Risk tiers
 - **RiskTier:** Q4 (Highest) **44.1%** vs Q1 (Lowest) **5.1%**.
+
 **Action:** Trigger Q4 rapid-response (manager 1:1s, OT fixes, quick recognition) with 30-day pulses.
   
 ![](../images/attrition_by_risktier.png)
